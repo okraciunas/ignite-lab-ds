@@ -16,6 +16,14 @@ module.exports = {
         sans: 'Inter, sans-serif'
       }
     },
+    fontSize: {
+      xs: 14,
+      sm: 16,
+      md: 18,
+      lg: 20,
+      xl: 24,
+      xxl: 32,
+    },
   },
   plugins: [],
 }
