@@ -1,13 +1,18 @@
+import { ReactNode } from 'react'
+import { Slot } from '@radix-ui/react-slot';
 import classnames from 'classnames'
 
 export interface TextProps {
-  children?: string
+  children?: string | ReactNode
   size?: 'sm' | 'md' | 'lg'
+  asChild?: boolean
 }
 
-export function Text({ children, size = 'md' }: TextProps) {
+export function Text({ children, size = 'md', asChild = false }: TextProps) {
+  const Wrapper = asChild ? Slot : 'span'
+
   return (
-    <span
+    <Wrapper
       className={classnames(
         "text-gray-100 font-sans",
         {
@@ -18,6 +23,6 @@ export function Text({ children, size = 'md' }: TextProps) {
       )}
     >
       {children}
-    </span>
+    </Wrapper>
   )
 }

@@ -24,3 +24,10 @@ export const Large: StoryObj<TextProps> = {
     size: 'lg'
   }
 }
+
+export const CustomWrapper: StoryObj<TextProps> = {
+  args: {
+    asChild: true,
+    children: (<h1>Label</h1>)
+  }
+}
