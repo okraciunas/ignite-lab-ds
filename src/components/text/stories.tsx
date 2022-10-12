@@ -6,7 +6,7 @@ export default {
   title: 'Components/Text',
   component: Text,
   args: {
-    children: 'Label',
+    children: 'Text label',
     size: 'md'
   },
   argTypes: {
@@ -35,7 +35,7 @@ export const Large: StoryObj<TextProps> = {
 export const CustomWrapper: StoryObj<TextProps> = {
   args: {
     asChild: true,
-    children: (<h1>Label</h1>)
+    children: (<p>Label</p>)
   },
   argTypes: {
     children: {
