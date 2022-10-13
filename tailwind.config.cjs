@@ -15,6 +15,7 @@ module.exports = {
         200: '#c4c4cc',
         100: '#e1e1e6',
       },
+      transparent: 'transparent',
       white: '#fff'
     },
     extend: {
